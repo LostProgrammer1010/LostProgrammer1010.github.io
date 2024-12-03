@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Dustin Meyer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Home.css">
         <script src="Home.js"></script>
+
     </head>
     <body>
-        <div class="main-container">
-            <div class="content" id="pic">
-                <h1>Profile Picture</h1>
+        <div class="container">
+            <div class="column" id="about">
+                <div class="content" id="name">
+                    <h1>Dustin Meyer</h1>
+                    <h3>I am a</h3>
+                    <h2>Full Stack Developer</h2>
+                </div>
+                <div class="content" id="full-stack">
+                    <h1>Current Technologies</h1>
+                    <p>I'm proficient in a range of modern technologies. These are some of my main technologies.</p>
+                    <div class="tech-row">
+                        <div class="tech">
+                            <img src="Assets/django.svg" id="django">
+                            <div class="column-words">
+                                <h1>Django</h1>
+                                <sub>Python backend</sub>
+                            </div>
+                         </div>
+                         <div class="tech">
+                            <img src="Assets/figma.svg" id="figma"/>
+                            <div class="column-words">
+                                <h1>Figma</h1>
+                                <sub>Web Design</sub>
+                            </div>
+                         </div>
+                         <div class="tech">
+                            <img src="Assets/git.svg" id="git"/>
+                            <div class="column-words">
+                                <h1>Git</h1>
+                                <sub>Version Control</sub>
+                            </div>
+                         </div>
+                         <div class="tech">
+                            <img src="Assets/react.svg" id="react"/>
+                            <div class="column-words">
+                                <h1>React</h1>
+                                <sub>JavaScript Library</sub>
+                            </div>
+                         </div>
+                         <div class="tech">
+                            <img src="Assets/blazor.svg" id="blazor"/>
+                            <div class="column-words">
+                                <h1>Blazor</h1>
+                                <sub>C# Library</sub>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="pic-column">
+                <div class="content" id="pic">
+                    <img src="https://aimint.org/ap/wp-content/uploads/sites/18/2016/04/image-placeholder-vertical.jpg"/>
+                </div>
             </div>
 
-            <div class="content" id="controls">
-                <button>Home</button>
-                <button>Experience</button>
-                <button>Education</button>
-                <button>Projects</button>
-                
+            <div class="column" id="controls-column">
+                <div class="content" id="controls">
+                    <button>Home</button>
+                    <button onclick="loadExperience()">Experience</button>
+                    <button>Education</button>
+                    <button>Projects</button>
+                </div>
             </div>
 
-            <div class="content" id="name">
-                <h1>Dustin Meyer</h1>
-                <h1>I am a </h1>
-                <h1><b>Full Stack Developer</b></h1>
-            </div>
-
-
-            <div class="content" id="tech-stack">
-                <h1>Current Technologies</h1>
-                <div class="row">
-                    <div><img src="Assets/figma.svg" id="figma">Figma</div>
-                    <div><img src="Assets/django.svg" id="django">Django</div>
-                    <div><img src="Assets/react.svg" id="react">React</div>
-                    <div><img src="Assets/git.svg" id="git">Git</div>
-                    <div><img src="Assets/python.svg" id="python">Python</div>
-                    <div><img src="Assets/JavaScript.svg" id="javascript">JavaScript</div>
+            <div class="row" id="social">
+                <div class="content" id="social-container">
+                    <a><img src="Assets/linkedin.svg"></a>
+                    <a><img src="Assets/github-mark.svg"></a>
+                    <a><img src="Assets/leetcode-svgrepo-com.svg" id="leetcode"/></a>
+                    <a href="mailto:youremail@example.com" ><img src="Assets/reshot-icon-email-YTPRCLQJVG.svg" id="email" /></a>
                     
                 </div>
             </div>
-            
+
+
+
+            <div class="column" id="test">
+                <div class="content">
+                    <h1>Dustin Meyer</h1>
+                    <h3>I am a</h3>
+                    <h2>Full Stack Developer</h2>
+                </div>
+                <div class="content">
+                    <h1>Dustin Meyer</h1>
+                    <h3>I am a</h3>
+                    <h2>Full Stack Developer</h2>
+                </div>
+            </div>
         </div>
+            
     </body>
 </html>
