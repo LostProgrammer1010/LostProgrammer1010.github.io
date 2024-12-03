@@ -1,20 +1,10 @@
-let constraint = 45;
-document.addEventListener("mousemove", (e) => {
-  e.preventDefault();
+window.addEventListener('load', function() {
+    let width = window.innerWidth;
+    // Hide the loading overlay and show the main content
 
-  mousePosition = {
-    x: e.clientX,
-    y: e.clientY,
-  };
-  let box = document.getElementById("aboutmain");
-  let boxBoundingRect = box.getBoundingClientRect();
-  let boxCenter = {
-    x: boxBoundingRect.left + boxBoundingRect.width / 2,
-    y: boxBoundingRect.top + boxBoundingRect.height / 2,
-  };
+    if (width > 720){
+        document.getElementById('name').style.opacity = '100';
+        document.getElementById('tech-stack').style.bottom = '0px';
+    }
 
-  box.style.transform =
-    "perspective(500px)" +
-    `rotateY(${(e.x - boxCenter.x - boxBoundingRect.width / 2) / constraint}deg)` +
-    `rotateX(${-(e.y - boxCenter.y - boxBoundingRect.height / 2) / constraint}deg)`;
-});
+  });
