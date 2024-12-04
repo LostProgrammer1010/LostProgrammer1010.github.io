@@ -8,7 +8,6 @@ body {
     margin: 0;
     background: radial-gradient(circle, white 1%, black 5%) 0 0;
     background-size: 30px 30px; /* Adjust dot size and spacing */
-    overflow: hidden;
 }
 
 .container {
@@ -254,20 +253,35 @@ body {
 }
 
 
-#test {
+#experiences {
     display: None;
     flex-grow: 1;
     order: -10;
     flex-direction: column;
-    align-items: stretchd;
+    align-items: stretch;
     color: white;
     transform: translateX(-100vw);
     height: auto;
     padding: 10px;
     transition: 1s ease;
+    font-family: roboto;
 }
-
-#test content {
+#experience1 {
+    position: relative;
     align-items: stretch;
     flex-grow: 1;
+    padding: 20px;
 }
+
+#experience2 {
+    position: relative;
+    align-items: stretch;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
