@@ -1,110 +1,85 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Dustin Meyer</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Home.css">
-        <script src="Home.js"></script>
-
+        <link rel="stylesheet" href="./home.css">
     </head>
     <body>
-        <div class="container">
-            <div class="column" id="about">
-                <div class="content" id="name">
-                    <h1>Dustin Meyer</h1>
-                    <h3>I am a</h3>
-                    <h2>Full Stack Developer</h2>
-                </div>
-                <div class="content" id="pic">
-                    <img src="Assets/Profile.jpeg"/>
-                </div>
-
-            </div>
-            <div class="column" id="pic-column">
-                <div class="content" id="full-stack">
-                    <h1>Current Technologies</h1>
-                    <p>I'm proficient in a range of modern technologies. These are some of my main technologies.</p>
-                    <div class="tech-row">
-                        <div class="tech">
-                            <img src="Assets/django.svg" id="django">
-                            <div class="column-words">
-                                <h1>Django</h1>
-                                <sub>Python backend</sub>
-                            </div>
-                         </div>
-                         <div class="tech">
-                            <img src="Assets/figma.svg" id="figma"/>
-                            <div class="column-words">
-                                <h1>Figma</h1>
-                                <sub>Web Design</sub>
-                            </div>
-                         </div>
-                         <div class="tech">
-                            <img src="Assets/git.svg" id="git"/>
-                            <div class="column-words">
-                                <h1>Git</h1>
-                                <sub>Version Control</sub>
-                            </div>
-                         </div>
-                         <div class="tech">
-                            <img src="Assets/react.svg" id="react"/>
-                            <div class="column-words">
-                                <h1>React</h1>
-                                <sub>JavaScript Library</sub>
-                            </div>
-                         </div>
-                         <div class="tech">
-                            <img src="Assets/blazor.svg" id="blazor"/>
-                            <div class="column-words">
-                                <h1>Blazor</h1>
-                                <sub>C# Library</sub>
-                            </div>
-                         </div>
-                         <div class="tech">
-                            <img src="Assets/bootstrap-4.svg" id="bootstrap"/>
-                            <div class="column-words">
-                                <h1>Bootstrap</h1>
-                                <sub>Easy CSS Styling</sub>
-                            </div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column" id="controls-column">
-                <div class="content" id="controls">
-                    <button onclick="loadHome()">Home</button>
-                    <button onclick="loadExperience()">Experience</button>
-                    <button>Education</button>
-                    <button>Projects</button>
-                </div>
-            </div>
-            <div class="row" id="social">
-                <div class="content" id="social-container">
-                    <a><img src="Assets/linkedin.svg"></a>
-                    <a><img src="Assets/github-mark.svg"></a>
-                    <a><img src="Assets/leetcode-svgrepo-com.svg" id="leetcode"/></a>
-                    <a href="mailto:youremail@example.com" ><img src="Assets/reshot-icon-email-YTPRCLQJVG.svg" id="email" /></a>
+        <div id="Socials">
+            <a href="#"><img src="./Assets/github.svg" alt="Github" title="Github"></a>
+            <a href="#"><img src="./Assets/linkedin.svg" alt="Linkedin" title="Linkedin"></a>
+            <a href="#"><img src="./Assets/leetcode.svg" alt="Linkedin" title="Leetcode"></a>
+            <a href="#"><img src="./Assets/mail.png" alt="Linkedin" title="dmeyerwork@gmail.com"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Resume">Resumes</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <img src="./Assets/Profile.jpeg" alt="">
+            <div>
+                <h1>Dustin Meyer</h1>
+                <p>
+                    I am a Full Stack Developer. 
+                    I mostly program in go and python. 
+                    I have experience in web development, building restful APIs.
                     
-                </div>
-            </div>
 
 
-
-            <div class="column" id="experiences">
-                <div class="content" id="experience1">
-                    <h1>Contract Help Desk Tech I</h1>
-                    <h2>TekSystems</h2>
-                    <h2>June 2024 - Present</h2>
-                </div>
-                <div class="content" id="experience2">
-                    <h1>Computer Science Tutor </h1>
-                    <h2>SUNY Brockport</h2>
-                    <h2>Auguest 2022 - June 2024</h2>
+                </p>
+                <div id="tech-stack">
                 </div>
             </div>
         </div>
-            
+        <div id="Projects">
+            <h1>Projects</h1>
+            <div id="project-list">
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <img src="./Assets/Profile.jpeg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed euismod, nisl eget aliquet ultricies, nunc nisl aliquet nunc,
+                        eget aliquet nunc nisl eget nisl.
+                    </p>
+                </div>
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <img src="./Assets/Profile.jpeg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed euismod, nisl eget aliquet ultricies, nunc nisl aliquet nunc,
+                        eget aliquet nunc nisl eget nisl.
+                    </p>
+                </div>
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <img src="./Assets/Profile.jpeg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed euismod, nisl eget aliquet ultricies, nunc nisl aliquet nunc,
+                        eget aliquet nunc nisl eget nisl.
+                    </p>
+                </div>
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <img src="./Assets/Profile.jpeg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed euismod, nisl eget aliquet ultricies, nunc nisl aliquet nunc,
+                        eget aliquet nunc nisl eget nisl.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="Resume">
+            <h1>Resume</h1>
+        </div>
+        
     </body>
+
+    <script src="./home.js"></script>
 </html>
