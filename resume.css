@@ -1,0 +1,117 @@
+#Resume {
+    display: flex;
+    flex-direction: column;
+}
+
+#Resume #resume-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family:'Times New Roman', Times, serif;
+    width: 80%;
+;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+
+#resume-container  h1,
+#resume-container h2,
+#resume-container h3,
+#resume-containerh4 ,
+#resume-container p {
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--clr-primary-a0)
+  }
+
+
+#resume-container p {
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--clr-primary-a20)
+  }
+
+#resume-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #resume-container  h2 {
+    font-size: 20px;
+    margin-bottom: 5px;  
+    align-self: flex-start;
+  }
+  #resume-container  h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #resume-container a {
+    color: var(--clr-primary-a0)
+  }
+  #resume-container a:visited {
+    color: var(--clr-primary-a0)
+  }
+
+  #resume-container ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-weight: 200;
+    color: var(--clr-primary-a20);
+  }
+  #resume-container #left-side li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    color: var(--clr-primary-a20)
+  }
+  #resume-container #right-side {
+    flex: 1;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding: 20px;
+  }
+  #resume-container #left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 20%;
+    order: 0;
+    padding: 20px;
+  }
+  #resume-container hr {
+    background-color: black;
+    color: var(--clr-primary-a20);
+    width: 100%;
+    
+  }
+  #resume-container #right-side hr {
+    margin: 0px;
+    padding: 0px;
+    height: 1px;
+    border: none;
+    background-color: black;
+  }
+  #resume-container #right-side ul{
+    list-style-type:disc;
+    padding-left: 20px;
+  }
+
+  #resume-container  img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    padding: 1px;
+    border-radius: 15px;
+    background-color: var(--clr-primary-a20);
+  }
+  #resume-container .title {
+    font-weight: bold;
+  }

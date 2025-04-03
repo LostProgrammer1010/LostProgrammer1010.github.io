@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne+Mono&display=swap');
 :root {
 /** Base colors */
 --clr-dark-a0: #000000;
@@ -38,7 +37,7 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1.1px;
-    font-family: syne mono;
+    font-family: Roboto mono;
 }
 
 body {
@@ -51,8 +50,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     padding-top: 200px;
-    padding-bottom: 200px;
-    gap: 25rem;
+    gap: 15rem;
     background: var(--clr-surface-a0);
 
 }
@@ -221,6 +219,7 @@ a:visited {
 
 #Projects #project-list {
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -236,9 +235,22 @@ a:visited {
     padding: 20px;
     background: var(--clr-surface-a10);
     gap: 10px;
-    width: 40%;
+    width: 100%;
     height: 500px;
+    min-height: fit-content;
     border-radius: 10px;;
+}
+
+#project-list a {
+    width: 40%;
+    height: 100%;
+    min-height: fit-content;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+#project-list a:hover {
+    transform: scale(1.01);
 }
 
 .project > img {
@@ -249,6 +261,11 @@ a:visited {
 .project > h2 {
     font-size: 30px;
     color: var(--clr-primary-a10);
+}
+
+.project > p {
+    font-size: 20px;
+    color: var(--clr-primary-a50);
 }
 
 
@@ -272,3 +289,18 @@ a:visited {
 #Socials img {
     height: 25px;
 }
+
+
+/* Contact */
+
+#Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Contact {
+    font-size: 25px;
+    color: var(--clr-primary-a10-o10);
+}
+
